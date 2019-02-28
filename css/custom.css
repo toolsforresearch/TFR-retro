@@ -292,18 +292,24 @@ table {
   box-shadow: none;
 }
 
-/* line 2, V:/surveys/survey.toolsforresearch.com/upload/themes/survey/tfr_responsive/sass/_checkradio.scss */
+/* line 1, V:/surveys/survey.toolsforresearch.com/upload/themes/survey/tfr_responsive/sass/_checkradio.scss */
+.table > tbody > tr > td {
+  vertical-align: top;
+  /* Overruling Bootstrap for checkboxes and radios, since Bootstrap align them at top. */
+}
+
+/* line 7, V:/surveys/survey.toolsforresearch.com/upload/themes/survey/tfr_responsive/sass/_checkradio.scss */
 .checkbox-item label {
   padding-left: 15px;
 }
 
-/* line 6, V:/surveys/survey.toolsforresearch.com/upload/themes/survey/tfr_responsive/sass/_checkradio.scss */
+/* line 11, V:/surveys/survey.toolsforresearch.com/upload/themes/survey/tfr_responsive/sass/_checkradio.scss */
 .checkbox-item .ls-label-xs-visibility {
   width: 27px;
   height: 27px;
 }
 
-/* line 10, V:/surveys/survey.toolsforresearch.com/upload/themes/survey/tfr_responsive/sass/_checkradio.scss */
+/* line 15, V:/surveys/survey.toolsforresearch.com/upload/themes/survey/tfr_responsive/sass/_checkradio.scss */
 .checkbox-item .ls-label-xs-visibility::after {
   width: 25px;
   height: 25px;
@@ -312,13 +318,15 @@ table {
   padding-left: 1px;
 }
 
-/* line 19, V:/surveys/survey.toolsforresearch.com/upload/themes/survey/tfr_responsive/sass/_checkradio.scss */
+/* line 24, V:/surveys/survey.toolsforresearch.com/upload/themes/survey/tfr_responsive/sass/_checkradio.scss */
 .checkbox-item input[type="checkbox"]:checked + label::after,
 .checkbox-item input[type="radio"]:checked + label::after {
   color: #fff;
+  width: 25px;
+  padding-left: 3px;
 }
 
-/* line 27, V:/surveys/survey.toolsforresearch.com/upload/themes/survey/tfr_responsive/sass/_checkradio.scss */
+/* line 34, V:/surveys/survey.toolsforresearch.com/upload/themes/survey/tfr_responsive/sass/_checkradio.scss */
 .checkbox-list label::after,
 .checkbox-item label::after {
   width: 25px;
@@ -330,45 +338,45 @@ table {
   border-radius: 2px;
 }
 
-/* line 37, V:/surveys/survey.toolsforresearch.com/upload/themes/survey/tfr_responsive/sass/_checkradio.scss */
+/* line 45, V:/surveys/survey.toolsforresearch.com/upload/themes/survey/tfr_responsive/sass/_checkradio.scss */
 .checkbox-list label::before,
 .checkbox-item label::before {
   width: 27px;
   height: 27px;
 }
 
-/* line 43, V:/surveys/survey.toolsforresearch.com/upload/themes/survey/tfr_responsive/sass/_checkradio.scss */
+/* line 51, V:/surveys/survey.toolsforresearch.com/upload/themes/survey/tfr_responsive/sass/_checkradio.scss */
 label::after {
   background-color: #702000;
 }
 
-/* line 47, V:/surveys/survey.toolsforresearch.com/upload/themes/survey/tfr_responsive/sass/_checkradio.scss */
+/* line 55, V:/surveys/survey.toolsforresearch.com/upload/themes/survey/tfr_responsive/sass/_checkradio.scss */
 .radio-item label::after {
   background-color: #702000;
 }
 
-/* line 51, V:/surveys/survey.toolsforresearch.com/upload/themes/survey/tfr_responsive/sass/_checkradio.scss */
+/* line 59, V:/surveys/survey.toolsforresearch.com/upload/themes/survey/tfr_responsive/sass/_checkradio.scss */
 .completed-wrapper {
   /* development only */
 }
 
-/* line 52, V:/surveys/survey.toolsforresearch.com/upload/themes/survey/tfr_responsive/sass/_checkradio.scss */
+/* line 60, V:/surveys/survey.toolsforresearch.com/upload/themes/survey/tfr_responsive/sass/_checkradio.scss */
 .completed-wrapper .assessment-table {
   display: none;
 }
 
-/* line 57, V:/surveys/survey.toolsforresearch.com/upload/themes/survey/tfr_responsive/sass/_checkradio.scss */
+/* line 65, V:/surveys/survey.toolsforresearch.com/upload/themes/survey/tfr_responsive/sass/_checkradio.scss */
 .panel-primary {
   border-color: #702000;
 }
 
-/* line 60, V:/surveys/survey.toolsforresearch.com/upload/themes/survey/tfr_responsive/sass/_checkradio.scss */
+/* line 68, V:/surveys/survey.toolsforresearch.com/upload/themes/survey/tfr_responsive/sass/_checkradio.scss */
 .panel-primary .panel-heading {
   background: #702000;
   border-color: #702000;
 }
 
-/* line 64, V:/surveys/survey.toolsforresearch.com/upload/themes/survey/tfr_responsive/sass/_checkradio.scss */
+/* line 72, V:/surveys/survey.toolsforresearch.com/upload/themes/survey/tfr_responsive/sass/_checkradio.scss */
 .panel-primary .panel-heading h4 {
   color: white;
 }
