@@ -37,6 +37,27 @@
   box-shadow: 0 0 20px #888888;
 }
 
+.question-title-container {
+  color: #702000;
+  text-shadow: 0 1px 0 white;
+  display: flex;
+  background-color: #eeeeee;
+  background-color: #e2e2e2;
+  background-image: -moz-linear-gradient(#eeeeee, #e2e2e2);
+  background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#eeeeee), to(#e2e2e2));
+  background-image: -webkit-linear-gradient(#eeeeee, #e2e2e2);
+  background-image: -o-linear-gradient(#eeeeee, #e2e2e2);
+  border-top-right-radius: 4px;
+  border-top-left-radius: 4px;
+  border-bottom-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  font-size: 20px;
+}
+
+.question-title-container p:last-child {
+  margin-bottom: 0;
+}
+
 .input-error.question-container {
   border-color: #b20d28;
   background-color: rgba(178, 13, 40, 0.05);
@@ -52,39 +73,6 @@
   background-image: -o-linear-gradient(#b20d28, #8f1a2c);
   color: white;
   text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.5);
-}
-
-td.total {
-  border: none;
-  background-color: transparent;
-}
-
-td.total .form-control[disabled] {
-  background: #bbb;
-  border: none;
-  box-shadow: none;
-  border-radius: 0;
-  color: #333;
-}
-
-.question-title-container {
-  color: #702000;
-  text-shadow: 0 1px 0 white;
-  display: flex;
-  background-color: #eeeeee;
-  background-color: #e2e2e2;
-  background-image: -moz-linear-gradient(#eeeeee, #e2e2e2);
-  background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#eeeeee), to(#e2e2e2));
-  background-image: -webkit-linear-gradient(#eeeeee, #e2e2e2);
-  background-image: -o-linear-gradient(#eeeeee, #e2e2e2);
-  border-top-right-radius: 4px;
-  border-top-left-radius: 4px;
-  border-bottom-right-radius: 0px;
-  border-bottom-left-radius: 0px;
-}
-
-.question-title-container p:last-child {
-  margin-bottom: 0;
 }
 
 .ls-answers {
@@ -158,11 +146,6 @@ td.total .form-control[disabled] {
   text-align: left;
 }
 
-.array-multi-flexi .ls-answers thead th {
-  font-size: 80%;
-  font-weight: normal;
-}
-
 .input-group-addon.btn-primary {
   color: #fff;
 }
@@ -177,6 +160,24 @@ td.total .form-control[disabled] {
 
 .slider.slider-untouched .slider-handle.custom::before {
   color: #bbb;
+}
+
+td.total {
+  border: none;
+  background-color: transparent;
+}
+
+td.total .form-control[disabled] {
+  background: #bbb;
+  border: none;
+  box-shadow: none;
+  border-radius: 0;
+  color: #333;
+}
+
+.slider-selection {
+  background-color: #ff743d;
+  background-image: none;
 }
 
 .btn-primary {
