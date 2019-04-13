@@ -1,57 +1,48 @@
-/* line 1, V:/surveys/survey.toolsforresearch.com/upload/themes/survey/tfr_responsive/sass/_privacy.scss */
 .limit-text-window {
   padding: 15px;
   border: none;
 }
 
-/* line 1, V:/surveys/survey.toolsforresearch.com/upload/themes/survey/tfr_responsive/sass/_overrides.scss */
 .space-col {
   margin: 0;
 }
 
-/* line 5, V:/surveys/survey.toolsforresearch.com/upload/themes/survey/tfr_responsive/sass/_overrides.scss */
 .privacy.row {
   margin: 0;
 }
 
-/* line 9, V:/surveys/survey.toolsforresearch.com/upload/themes/survey/tfr_responsive/sass/_overrides.scss */
 .privacy .h4 {
   margin-top: 0;
 }
 
-/* line 13, V:/surveys/survey.toolsforresearch.com/upload/themes/survey/tfr_responsive/sass/_overrides.scss */
 .survey-welcome.h4 {
   font-size: 16px;
 }
 
-/* line 18, V:/surveys/survey.toolsforresearch.com/upload/themes/survey/tfr_responsive/sass/_overrides.scss */
 .question-title-container .text-muted {
   color: #333;
 }
 
 /* general styling of questions */
-/* line 3, V:/surveys/survey.toolsforresearch.com/upload/themes/survey/tfr_responsive/sass/_questions.scss */
 .question-container {
   border: 1px solid rgba(102, 102, 102, 0.35);
   background-color: rgba(255, 255, 255, 0.5);
   margin-bottom: 30px;
   border-radius: 4px;
+  box-shadow: none;
+  transition: box-shadow 0.5s;
 }
 
-/* line 9, V:/surveys/survey.toolsforresearch.com/upload/themes/survey/tfr_responsive/sass/_questions.scss */
 .question-container:hover {
   box-shadow: 0 0 20px #888888;
-  transition-duration: 0.5s;
 }
 
-/* line 15, V:/surveys/survey.toolsforresearch.com/upload/themes/survey/tfr_responsive/sass/_questions.scss */
 .input-error.question-container {
   border-color: #b20d28;
   background-color: rgba(178, 13, 40, 0.05);
   box-shadow: 0 0 5px #b20d28;
 }
 
-/* line 20, V:/surveys/survey.toolsforresearch.com/upload/themes/survey/tfr_responsive/sass/_questions.scss */
 .input-error.question-container .question-title-container {
   background-color: #b20d28;
   background-color: #8f1a2c;
@@ -63,7 +54,19 @@
   text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.5);
 }
 
-/* line 32, V:/surveys/survey.toolsforresearch.com/upload/themes/survey/tfr_responsive/sass/_questions.scss */
+td.total {
+  border: none;
+  background-color: transparent;
+}
+
+td.total .form-control[disabled] {
+  background: #bbb;
+  border: none;
+  box-shadow: none;
+  border-radius: 0;
+  color: #333;
+}
+
 .question-title-container {
   color: #702000;
   text-shadow: 0 1px 0 white;
@@ -80,12 +83,10 @@
   border-bottom-left-radius: 0px;
 }
 
-/* line 47, V:/surveys/survey.toolsforresearch.com/upload/themes/survey/tfr_responsive/sass/_questions.scss */
 .question-title-container p:last-child {
   margin-bottom: 0;
 }
 
-/* line 52, V:/surveys/survey.toolsforresearch.com/upload/themes/survey/tfr_responsive/sass/_questions.scss */
 .ls-answers {
   padding-top: 0;
   padding-bottom: 0;
@@ -93,46 +94,30 @@
   margin-bottom: 15px;
 }
 
-/* line 58, V:/surveys/survey.toolsforresearch.com/upload/themes/survey/tfr_responsive/sass/_questions.scss */
-.ls-answers .form-inline .form-group {
-  margin-bottom: 15px;
-}
-
-/* line 62, V:/surveys/survey.toolsforresearch.com/upload/themes/survey/tfr_responsive/sass/_questions.scss */
 .ls-answers.form-group {
   margin-bottom: 15px;
 }
 
-/* line 66, V:/surveys/survey.toolsforresearch.com/upload/themes/survey/tfr_responsive/sass/_questions.scss */
 .ls-answers ul:first-child {
   margin-bottom: 0;
 }
 
-/* line 69, V:/surveys/survey.toolsforresearch.com/upload/themes/survey/tfr_responsive/sass/_questions.scss */
-.ls-answers ul:first-child li:last-child {
-  margin-bottom: 0;
-}
-
-/* line 75, V:/surveys/survey.toolsforresearch.com/upload/themes/survey/tfr_responsive/sass/_questions.scss */
 .ls-question-help, .ls-questionhelp {
   font-size: 80%;
   color: #0b651b;
 }
 
-/* line 79, V:/surveys/survey.toolsforresearch.com/upload/themes/survey/tfr_responsive/sass/_questions.scss */
 .ls-question-help a, .ls-questionhelp a {
   text-decoration: underline;
   color: #0b651b;
 }
 
-/* line 85, V:/surveys/survey.toolsforresearch.com/upload/themes/survey/tfr_responsive/sass/_questions.scss */
 .asterisk {
   order: 1;
   width: 20px;
   font-size: 12px;
 }
 
-/* line 91, V:/surveys/survey.toolsforresearch.com/upload/themes/survey/tfr_responsive/sass/_questions.scss */
 .ls-question-mandatory,
 .ls-question-help {
   font-weight: normal;
@@ -141,69 +126,78 @@
   margin-left: 4px;
 }
 
-/* line 99, V:/surveys/survey.toolsforresearch.com/upload/themes/survey/tfr_responsive/sass/_questions.scss */
 .question-code {
   font-style: italic;
   font-weight: normal;
   white-space: nowrap;
 }
 
-/* line 105, V:/surveys/survey.toolsforresearch.com/upload/themes/survey/tfr_responsive/sass/_questions.scss */
 .question-code::before {
   content: "[";
 }
 
-/* line 109, V:/surveys/survey.toolsforresearch.com/upload/themes/survey/tfr_responsive/sass/_questions.scss */
 .question-code::after {
   content: "]";
 }
 
-/* line 113, V:/surveys/survey.toolsforresearch.com/upload/themes/survey/tfr_responsive/sass/_questions.scss */
 .question-text {
   order: 2;
 }
 
-/* line 118, V:/surveys/survey.toolsforresearch.com/upload/themes/survey/tfr_responsive/sass/_questions.scss */
-.ls-em-success {
-  display: none;
-}
-
 /* end general styling of questions */
-/* line 125, V:/surveys/survey.toolsforresearch.com/upload/themes/survey/tfr_responsive/sass/_questions.scss */
 .boilerplate .ls-questionhelp {
   margin-top: 15px;
   margin-bottom: 15px;
 }
 
-/* line 131, V:/surveys/survey.toolsforresearch.com/upload/themes/survey/tfr_responsive/sass/_questions.scss */
 .slider-handle {
   background-color: #702000;
 }
 
-/* line 1, V:/surveys/survey.toolsforresearch.com/upload/themes/survey/tfr_responsive/sass/_buttons.scss */
+.multiple-opt-comments .form-horizontal .control-label {
+  text-align: left;
+}
+
+.array-multi-flexi .ls-answers thead th {
+  font-size: 80%;
+  font-weight: normal;
+}
+
+.input-group-addon.btn-primary {
+  color: #fff;
+}
+
+.slider.slider-untouched .slider-handle {
+  background-color: transparent;
+}
+
+.slider-handle.custom::before {
+  color: #702000;
+}
+
+.slider.slider-untouched .slider-handle.custom::before {
+  color: #bbb;
+}
+
 .btn-primary {
   border-color: #3d1100;
   background-color: #702000;
 }
 
-/* line 5, V:/surveys/survey.toolsforresearch.com/upload/themes/survey/tfr_responsive/sass/_buttons.scss */
 .btn-primary.active, .btn-primary:hover {
   background-color: #3d1100;
   border-color: #3d1100;
 }
 
-/* line 10, V:/surveys/survey.toolsforresearch.com/upload/themes/survey/tfr_responsive/sass/_buttons.scss */
 .btn-primary.active:hover, .btn-primary:hover:hover {
   background-color: #3d1100;
   border-color: #3d1100;
 }
 
-/* line 1, V:/surveys/survey.toolsforresearch.com/upload/themes/survey/tfr_responsive/sass/_tables.scss */
 table {
   overflow: hidden;
 }
 
-/* line 5, V:/surveys/survey.toolsforresearch.com/upload/themes/survey/tfr_responsive/sass/_tables.scss */
 .table-bordered,
 .table-bordered > thead > tr > th,
 .table-bordered > tbody > tr > th,
@@ -214,7 +208,6 @@ table {
   border: none;
 }
 
-/* line 15, V:/surveys/survey.toolsforresearch.com/upload/themes/survey/tfr_responsive/sass/_tables.scss */
 .table,
 .table > thead > tr > th,
 .table > tbody > tr > th,
@@ -226,7 +219,6 @@ table {
   border-bottom: 1px solid #ccc;
 }
 
-/* line 26, V:/surveys/survey.toolsforresearch.com/upload/themes/survey/tfr_responsive/sass/_tables.scss */
 .table.table-col-hover,
 .table.table-col-hover > thead > tr > th,
 .table.table-col-hover > tbody > tr > th,
@@ -238,32 +230,26 @@ table {
   border-right: 1px solid #ccc;
 }
 
-/* line 37, V:/surveys/survey.toolsforresearch.com/upload/themes/survey/tfr_responsive/sass/_tables.scss */
 .table.table-col-hover > thead > tr > th {
   border-bottom: 1px solid #ccc;
 }
 
-/* line 41, V:/surveys/survey.toolsforresearch.com/upload/themes/survey/tfr_responsive/sass/_tables.scss */
 .table-hover > tbody > tr:hover {
   background-color: #eee;
 }
 
-/* line 44, V:/surveys/survey.toolsforresearch.com/upload/themes/survey/tfr_responsive/sass/_tables.scss */
 .table-hover > tbody > tr:hover td:hover {
   background-color: #ddd;
 }
 
-/* line 50, V:/surveys/survey.toolsforresearch.com/upload/themes/survey/tfr_responsive/sass/_tables.scss */
 .table.table-col-hover td:hover {
   background: #ddd;
 }
 
-/* line 56, V:/surveys/survey.toolsforresearch.com/upload/themes/survey/tfr_responsive/sass/_tables.scss */
 .table-col-hover td {
   border-right: 1px solid #ccc;
 }
 
-/* line 60, V:/surveys/survey.toolsforresearch.com/upload/themes/survey/tfr_responsive/sass/_tables.scss */
 .table-col-hover td:hover::after {
   background-color: #ddd;
   content: '';
@@ -276,14 +262,12 @@ table {
   overflow: hidden;
 }
 
-/* line 1, V:/surveys/survey.toolsforresearch.com/upload/themes/survey/tfr_responsive/sass/_group.scss */
 .group-title.text-center {
   text-align: left;
   margin-left: 15px;
   margin-bottom: 15px;
 }
 
-/* line 7, V:/surveys/survey.toolsforresearch.com/upload/themes/survey/tfr_responsive/sass/_group.scss */
 .group-description.well {
   background: transparent;
   min-height: 0;
@@ -292,96 +276,88 @@ table {
   box-shadow: none;
 }
 
-/* line 1, V:/surveys/survey.toolsforresearch.com/upload/themes/survey/tfr_responsive/sass/_checkradio.scss */
-.table > tbody > tr > td {
-  vertical-align: top;
-  /* Overruling Bootstrap for checkboxes and radios, since Bootstrap align them at top. */
+.radio-item .ls-label-xs-visibility {
+  width: 30px;
+  height: 30px;
 }
 
-/* line 7, V:/surveys/survey.toolsforresearch.com/upload/themes/survey/tfr_responsive/sass/_checkradio.scss */
-.checkbox-item label {
-  padding-left: 15px;
+.radio-item label {
+  padding-left: 20px;
+  padding-top: 3px;
 }
 
-/* line 11, V:/surveys/survey.toolsforresearch.com/upload/themes/survey/tfr_responsive/sass/_checkradio.scss */
-.checkbox-item .ls-label-xs-visibility {
-  width: 27px;
-  height: 27px;
+.radio-item label:before {
+  width: 30px;
+  height: 30px;
+  border-color: #aaa;
+  margin-right: 20px;
 }
 
-/* line 15, V:/surveys/survey.toolsforresearch.com/upload/themes/survey/tfr_responsive/sass/_checkradio.scss */
-.checkbox-item .ls-label-xs-visibility::after {
-  width: 25px;
-  height: 25px;
-  border-radius: 2px;
-  padding-top: 4px;
-  padding-left: 1px;
-}
-
-/* line 24, V:/surveys/survey.toolsforresearch.com/upload/themes/survey/tfr_responsive/sass/_checkradio.scss */
-.checkbox-item input[type="checkbox"]:checked + label::after,
-.checkbox-item input[type="radio"]:checked + label::after {
-  color: #fff;
-  width: 25px;
-  padding-left: 3px;
-}
-
-/* line 34, V:/surveys/survey.toolsforresearch.com/upload/themes/survey/tfr_responsive/sass/_checkradio.scss */
-.checkbox-list label::after,
-.checkbox-item label::after {
-  width: 25px;
-  height: 25px;
-  background-color: #702000;
-  font-size: 20px;
-  padding-right: 2px;
-  padding-top: 0;
-  border-radius: 2px;
-}
-
-/* line 45, V:/surveys/survey.toolsforresearch.com/upload/themes/survey/tfr_responsive/sass/_checkradio.scss */
-.checkbox-list label::before,
-.checkbox-item label::before {
-  width: 27px;
-  height: 27px;
-}
-
-/* line 51, V:/surveys/survey.toolsforresearch.com/upload/themes/survey/tfr_responsive/sass/_checkradio.scss */
-label::after {
-  background-color: #702000;
-}
-
-/* line 55, V:/surveys/survey.toolsforresearch.com/upload/themes/survey/tfr_responsive/sass/_checkradio.scss */
 .radio-item label::after {
   background-color: #702000;
+  width: 20px;
+  height: 20px;
+  left: 5px;
+  top: 5px;
 }
 
-/* line 59, V:/surveys/survey.toolsforresearch.com/upload/themes/survey/tfr_responsive/sass/_checkradio.scss */
-.completed-wrapper {
-  /* development only */
+/* .checked .radio-item label::before {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  width: $radiosize;
+  height: $radiosize;
+  
+  margin-left: -20px;
+  border: 1px solid #ff0000;
+  border-radius: 50%;
+  background-color: #fff;
+} */
+.checkbox-item label,
+.checkbox-item label.ls-label-xs-visibility {
+  padding-left: 18px;
+  padding-top: 3px;
 }
 
-/* line 60, V:/surveys/survey.toolsforresearch.com/upload/themes/survey/tfr_responsive/sass/_checkradio.scss */
-.completed-wrapper .assessment-table {
-  display: none;
+.checkbox-item label::before,
+.checkbox-item label.ls-label-xs-visibility::before {
+  width: 30px;
+  height: 30px;
 }
 
-/* line 65, V:/surveys/survey.toolsforresearch.com/upload/themes/survey/tfr_responsive/sass/_checkradio.scss */
-.panel-primary {
-  border-color: #702000;
-}
-
-/* line 68, V:/surveys/survey.toolsforresearch.com/upload/themes/survey/tfr_responsive/sass/_checkradio.scss */
-.panel-primary .panel-heading {
-  background: #702000;
-  border-color: #702000;
-}
-
-/* line 72, V:/surveys/survey.toolsforresearch.com/upload/themes/survey/tfr_responsive/sass/_checkradio.scss */
-.panel-primary .panel-heading h4 {
+.checkbox-item label::after,
+.checkbox-item label.ls-label-xs-visibility::after {
+  width: 30px;
+  height: 30px;
+  border-radius: 2px;
+  padding-top: 0px;
+  padding-left: 1px;
+  background-color: #702000;
   color: white;
+  font-size: 24px;
+  line-height: 27px;
 }
 
-/* line 10, V:/surveys/survey.toolsforresearch.com/upload/themes/survey/tfr_responsive/sass/custom.scss */
+.checkbox-item .ls-label-xs-visibility {
+  width: 30px;
+  height: 30px;
+}
+
+.checkbox-list .input-sm {
+  height: 32px;
+  font-size: inherit;
+}
+
+.othertext-label-checkbox-container {
+  padding-top: 0;
+}
+
+.leaflet-container,
+div[id^="gmap_canvas"],
+div[id^=" gmap_canvas"] {
+  margin-top: 15px;
+}
+
 body {
   background-color: #eeeeee;
   background-image: url(../images/squaregrid.gif);
@@ -392,12 +368,36 @@ body {
   color: #333;
 }
 
-/* line 20, V:/surveys/survey.toolsforresearch.com/upload/themes/survey/tfr_responsive/sass/custom.scss */
+.table > tbody > tr > td {
+  vertical-align: top;
+  /* Overruling Bootstrap for checkboxes and radios, since Bootstrap aligns them at top. */
+}
+
+.panel-primary {
+  border-color: #702000;
+}
+
+.panel-primary .panel-heading {
+  background: #702000;
+  border-color: #702000;
+}
+
+.panel-primary .panel-heading h4 {
+  color: white;
+}
+
+.checkbox-item label::before {
+  border-color: #aaa;
+}
+
+.form-control {
+  border-color: #aaa;
+}
+
 #navbar {
   font-size: 14px;
 }
 
-/* line 24, V:/surveys/survey.toolsforresearch.com/upload/themes/survey/tfr_responsive/sass/custom.scss */
 h1, h2, h3, h4, h5,
 .h1, .h2, .h3, .h4, .h5, .h6 {
   color: #702000;
@@ -405,13 +405,16 @@ h1, h2, h3, h4, h5,
   font-weight: normal;
 }
 
-/* line 31, V:/surveys/survey.toolsforresearch.com/upload/themes/survey/tfr_responsive/sass/custom.scss */
 h1, .jumbotron h1, #wrapper h1 {
   font-size: 2.45rem;
   line-height: 3.3rem;
 }
 
-/* line 36, V:/surveys/survey.toolsforresearch.com/upload/themes/survey/tfr_responsive/sass/custom.scss */
+#welcome-container p {
+  margin: 0 0 1.4rem;
+  line-height: 2rem;
+}
+
 #welcome-container {
   border: 1px solid rgba(102, 102, 102, 0.35);
   background-color: rgba(255, 255, 255, 0.5);
@@ -421,24 +424,20 @@ h1, .jumbotron h1, #wrapper h1 {
   margin-top: 15px;
 }
 
-/* line 44, V:/surveys/survey.toolsforresearch.com/upload/themes/survey/tfr_responsive/sass/custom.scss */
 #welcome-container .survey-description,
 #welcome-container .h4 {
   color: #333;
 }
 
-/* line 49, V:/surveys/survey.toolsforresearch.com/upload/themes/survey/tfr_responsive/sass/custom.scss */
 #welcome-container .survey-description.text-center,
 #welcome-container .survey-name.text-center {
   text-align: left;
 }
 
-/* line 54, V:/surveys/survey.toolsforresearch.com/upload/themes/survey/tfr_responsive/sass/custom.scss */
 #welcome-container h1.survey-name {
   margin-top: 0;
 }
 
-/* line 60, V:/surveys/survey.toolsforresearch.com/upload/themes/survey/tfr_responsive/sass/custom.scss */
 .privacy > div {
   border: 1px solid rgba(102, 102, 102, 0.35);
   background-color: rgba(255, 255, 255, 0.5);
@@ -448,13 +447,11 @@ h1, .jumbotron h1, #wrapper h1 {
   margin-top: 15px;
 }
 
-/* line 70, V:/surveys/survey.toolsforresearch.com/upload/themes/survey/tfr_responsive/sass/custom.scss */
 .top-container .progress {
   height: 10px;
   box-shadow: none;
 }
 
-/* line 76, V:/surveys/survey.toolsforresearch.com/upload/themes/survey/tfr_responsive/sass/custom.scss */
 .progress-bar {
   background-color: #702000;
   color: #702000;
@@ -463,16 +460,12 @@ h1, .jumbotron h1, #wrapper h1 {
   font-size: 1px;
 }
 
-/* line 84, V:/surveys/survey.toolsforresearch.com/upload/themes/survey/tfr_responsive/sass/custom.scss */
 .progress {
   border: 1px solid rgba(102, 102, 102, 0.35);
   background-color: rgba(255, 255, 255, 0.5);
 }
 
-/* line 89, V:/surveys/survey.toolsforresearch.com/upload/themes/survey/tfr_responsive/sass/custom.scss */
 .language_change_container {
   height: auto;
   overflow: hidden !important;
 }
-
-/*# sourceMappingURL=../css/custom.map */

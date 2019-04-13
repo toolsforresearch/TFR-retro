@@ -21,7 +21,7 @@
         <version>3.0</version>
         <apiVersion>3</apiVersion>
         <description><![CDATA[<strong>TFR Responsive retro theme</strong><br>TFR's theme as it appeared in 2016, but now updated for LimeSurvey 3.x]]></description>
-        <last_update>2019-02-07 12:39:24</last_update>
+        <last_update>2019-03-05 22:01:30</last_update>
     <extends>vanilla</extends></metadata>
 
     <!--
